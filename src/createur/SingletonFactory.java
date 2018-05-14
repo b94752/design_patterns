@@ -1,5 +1,13 @@
 package createur;
 
+/**
+ * But : manipuler toujours la même instance d’un objet.
+ * 
+ * Solution : utiliser le mot clef static
+ * 
+ * @author benoit.charroux
+ *
+ */
 public class SingletonFactory {
 
 	// static rend unique en mémoire
