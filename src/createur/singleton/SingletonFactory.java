@@ -1,4 +1,4 @@
-package createur;
+package createur.singleton;
 
 /**
  * But : manipuler toujours la même instance d’un objet.

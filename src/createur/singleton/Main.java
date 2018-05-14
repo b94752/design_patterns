@@ -1,4 +1,4 @@
-package createur;
+package createur.singleton;
 
 public class Main {
 
