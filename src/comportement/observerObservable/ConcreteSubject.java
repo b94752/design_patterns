@@ -1,0 +1,27 @@
+package comportement.observerObservable;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ConcreteSubject implements Subject{
+
+	List<Observer> observers = new ArrayList<Observer>();
+	
+	@Override
+	public void attach(Observer observer) {
+		observers.add(observer);
+	}
+
+	@Override
+	public void deattach(Observer observer) {
+		observers.remove(observer);
+	}
+
+	@Override
+	public void notify(Object object) {
+		for(Observer observer: observers) {
+			observer.update(object);
+		}
+	}
+
+}
