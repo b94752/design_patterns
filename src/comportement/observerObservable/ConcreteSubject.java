@@ -1,11 +1,12 @@
 package comportement.observerObservable;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class ConcreteSubject implements Subject{
 
-	List<Observer> observers = new ArrayList<Observer>();
+	List<Observer> observers = new LinkedList<Observer>();
 	
 	@Override
 	public void attach(Observer observer) {
